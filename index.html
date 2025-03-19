@@ -11,48 +11,10 @@
         </script>
 
         <link href="main.css" rel="stylesheet">
-        <script type="text/javascript">
-            // <![CDATA[
-            var speed=100; // speed of wobbling, lower is faster
-            var height=3; // height of wobbling in pixels
-            var alink="http://www.mf2fm.com/rv"; // page to link text to (set to ="" for no link)
-            
-            /****************************
-            *    Wobbly Text Effect     *
-            *(c) 2003-6 mf2fm web-design*
-            *  http://www.mf2fm.com/rv  *
-            * DON'T EDIT BELOW THIS BOX *
-            ****************************/
-            var wobtxt, wobble, wobcnt=0;
-            window.onload=function() { if (document.getElementById) {
-              var i, wobli;
-              wobble=document.getElementById("wobble");
-              wobtxt=wobble.firstChild.nodeValue;
-              while (wobble.childNodes.length) wobble.removeChild(wobble.childNodes[0]);
-              for (i=0; i<wobtxt.length; i++) {
-                wobli=document.createElement("span");
-                wobli.setAttribute("id", "wobb"+i);
-                wobli.style.position="relative";
-                wobli.appendChild(document.createTextNode(wobtxt.charAt(i)));
-                if (alink) {
-                  wobli.style.cursor="pointer";
-                  wobli.onclick=function() { top.location.href=alink; }
-                }
-                wobble.appendChild(wobli);
-              }
-              setInterval("wobbler()", speed);
-            }}
-            
-            function wobbler() {
-              for (var i=0; i<wobtxt.length; i++) document.getElementById("wobb"+i).style.top=Math.round(height*Math.sin(i+wobcnt))+"px"
-              wobcnt++;
-            }
-            // ]]>
-            </script>
     </head>
 
     <body onload="setInterval(step,100)">
-        <div id="wobble">
+        <div class="header">
             welcome 2 jamie monster!!
         </div>
 
@@ -62,7 +24,7 @@
             <div id="page-contents">
 
                 <div id="sidebar">
-                    <p>16 he/him</p>
+                    <p><b>16 he/him</b></p>
                     <img src="images/e8338031.jpg">
                     <img src="images/ff7f9621.jpg">
                     <a href="https://claire.monster">
@@ -70,17 +32,23 @@
                     </a>
                     <img src="images/loona2_2.gif">
                     <img src="images/loossemble.png">
+                    <img src="images/yves.png">
                     <img src="images/transrightsnow.png">
-                    <img src="images/bufreepalestine.gif">
+                    <a href="https://karuma.me/resources/palestine/">
+                        <img src="images/bufreepalestine.gif">
+                    </a>
                     <img src="images/e26f5c9e.gif">
                     <img src="images/a13.gif">
                     <img src="images/a101.jpg">
                     <img src="images/i2.png">
+                    <a href="http://www.xmission.com/~emailbox/catstuff.htm">
+                        <img src="images/catstuff_ebay.gif">
+                    </a>
 
                 </div>
     
                 <div id="the-page">
-                    <p id="hello"> hi! welcome 2 my page :3 idk what ill do w/ this website but im gonna have alot of fun OK!</p>
+                    <h1 id="hello"> JAMIE: the blog :3</h1>
                     <div id="currently">
                         <p>currently: staying up too late beginning this website! :P</p>
                         <img src="images/700.gif">
@@ -117,6 +85,14 @@
                 <img src="images/g24.gif">
                 <img src="images/karkaliciousred.gif">
                 <img src="images/n5.gif">
+                <img src="images/v44.gif">
+            </div>
+
+            <div class="footer">
+                <a href="resources.html">
+                    <img src="images/cooltext478569397264390.gif">
+                </a>
+                <img src="images/fun02.gif">
             </div>
         </div>
     </body>

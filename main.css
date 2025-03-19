@@ -13,7 +13,21 @@ body {
     font-family: "basiic", Arial, sans-serif;
 }
 
-#wobble {
+@keyframes blinking-border {
+    0% {
+        border-color: #330099;
+    }
+
+    50% {
+        border-color: #6666cc;
+    }
+
+    100% {
+        border-color: #330099;
+    }
+}
+
+.header {
     display:flex;
     background-color:white;
     justify-content: center;
@@ -25,6 +39,8 @@ body {
     width: 60%;
     margin: 0 auto;
     font-family: "daydream", Arial, sans-serif;
+    border: 4px dashed #330099;
+    animation: blinking-border 0.5s infinite steps(2);
 }
 
 #main-guy {
@@ -38,6 +54,8 @@ body {
     margin-top: 15px;
     flex-direction: column;
     gap: 5px;
+    border: 4px dashed #330099;
+    animation: blinking-border 0.5s infinite steps(2);
 }
 
 #kitty-divider {
@@ -63,7 +81,7 @@ body {
 
 #sidebar {
     display: flex;
-    width: 15%;
+    width: 88px;
     flex-direction: column;
     align-self: flex-start;
     margin: 0;
@@ -73,11 +91,19 @@ body {
 }
 
 #sidebar img {
-    width: 88px;
-    height: 31px;
     object-fit: contain;
     margin: 0;
     padding: 0;
+}
+
+#the-page {
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    flex: 1 0 auto;
 }
 
 #sidebar-right {
@@ -97,14 +123,40 @@ body {
     height: 100%;
 }
 
-#hello {
-    font-size: 20px;
-}
-
 #blinkies {
     flex-direction: row;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    margin-top: 7px;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+li {
+    list-style:circle;
+    list-style-position: inside;
+}
+
+#resources {
+    display: flex;
+    background-color: white;
+    justify-content: center;
+    align-items: flex-start;
+    width: 60%;
+    margin: 0 auto;
+    padding: 10px;
+    margin-top: 15px;
+    gap: 5px;
+    border: 4px dashed #330099;
+    animation: blinking-border 0.5s infinite steps(2);
+    align-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
 }
