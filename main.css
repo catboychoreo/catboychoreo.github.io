@@ -1,0 +1,106 @@
+@font-face {
+    font-family: "daydream";
+    src: url("fonts/Daydream.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "basiic";
+    src: url("fonts/basiic.ttf") format("truetype");
+}
+
+body {
+    background-image: url("images/139.png");    
+    font-family: "basiic", Arial, sans-serif;
+}
+
+#wobble {
+    display:flex;
+    background-color:white;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    font-size: 25px;
+    color: #6666cc;
+    padding: 10px;
+    width: 60%;
+    margin: 0 auto;
+    font-family: "daydream", Arial, sans-serif;
+}
+
+#main-guy {
+    display: flex;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    margin: 0 auto;
+    padding: 10px;
+    margin-top: 15px;
+    flex-direction: column;
+    gap: 5px;
+}
+
+#kitty-divider {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#page-contents {
+    display: flex;
+    flex-direction: row;
+    margin: 0px;
+}
+
+#currently {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    gap: 2px;
+}
+
+#sidebar {
+    display: flex;
+    width: 15%;
+    flex-direction: row;
+    align-self: flex-start;
+    margin: 0;
+    padding: 0;
+    flex-wrap: wrap;
+    gap: 2px;
+}
+
+#sidebar img {
+    width: 88px;
+    height: 31px;
+    object-fit: contain;
+    margin: 0;
+    padding: 0;
+}
+
+#sidebar-right {
+    display: flex;
+    width: 15%;
+    flex-direction: row;
+    align-self: flex-start;
+    margin: 0;
+    padding: 0;
+    flex-wrap: wrap;
+    gap: 2px;
+}
+
+#sidebar-right img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+#hello {
+    font-size: 20px;
+}
+
+#blinkies {
+    flex-direction: row;
+}
