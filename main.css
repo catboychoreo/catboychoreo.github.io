@@ -9,7 +9,7 @@
 }
 
 body {
-    background-image: url("images/139.png");    
+    background-image: url("images/139.png");
     font-family: "basiic", Arial, sans-serif;
 }
 
@@ -27,9 +27,30 @@ body {
     }
 }
 
+.dashed {
+    background-image: linear-gradient(90deg, #330099 50%, transparent 50%), linear-gradient(90deg, #330099 50%, transparent 50%), linear-gradient(0deg, #330099 50%, transparent 50%), linear-gradient(0deg, #330099 50%, transparent 50%);
+    background-repeat: repeat-x, repeat-x, repeat-y, repeat-y;
+    /* The 4px here is the background size */
+    background-size: 15px 4px, 15px 4px, 4px 15px, 4px 15px;
+    background-position: left top, right bottom, left bottom, right top;
+
+    /* The steps here is how many steps to do per animation cycle. It replaces "linear()" */
+    animation: border-dance 1s infinite steps(8);
+}
+
+@keyframes border-dance {
+    0% {
+        background-position: left top, right bottom, left bottom, right top;
+    }
+
+    100% {
+        background-position: left 15px top, right 15px bottom, left bottom 15px, right top 15px;
+    }
+}
+
 .header {
-    display:flex;
-    background-color:white;
+    display: flex;
+    background-color: white;
     justify-content: center;
     align-items: center;
     gap: 5px;
@@ -39,8 +60,8 @@ body {
     width: 60%;
     margin: 0 auto;
     font-family: "daydream", Arial, sans-serif;
-    border: 4px dashed #330099;
-    animation: blinking-border 0.5s infinite steps(2);
+    /* border: 4px dashed #330099; */
+    /* animation: blinking-border 0.5s infinite steps(2); */
 }
 
 #main-guy {
@@ -54,8 +75,8 @@ body {
     margin-top: 15px;
     flex-direction: column;
     gap: 5px;
-    border: 4px dashed #330099;
-    animation: blinking-border 0.5s infinite steps(2);
+    /* border: 4px dashed #330099; */
+    /* animation: blinking-border 0.5s infinite steps(2); */
 }
 
 #kitty-divider {
@@ -103,7 +124,7 @@ body {
     flex-wrap: wrap;
     justify-content: flex-start;
     align-items: center;
-    flex: 1 0 auto;
+    flex: 1 1 auto;
 }
 
 #sidebar-right {
@@ -140,11 +161,11 @@ body {
 }
 
 li {
-    list-style:circle;
+    list-style: circle;
     list-style-position: inside;
 }
 
-#resources {
+.resources {
     display: flex;
     background-color: white;
     justify-content: center;
@@ -154,8 +175,6 @@ li {
     padding: 10px;
     margin-top: 15px;
     gap: 5px;
-    border: 4px dashed #330099;
-    animation: blinking-border 0.5s infinite steps(2);
     align-content: center;
     flex-direction: column;
     flex-wrap: wrap;
