@@ -142,11 +142,11 @@ body {
 #sidebar-right {
     display: flex;
     width: 15%;
-    flex-direction: row;
+    flex-direction: column;
     align-self: flex-start;
     margin: 0;
     padding: 0;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     gap: 2px;
 }
 
@@ -156,10 +156,14 @@ body {
     height: 100%;
 }
 
+#my-song {
+    overflow: auto;
+}
+
 #updates {
     margin-top: 3px;
     padding:15px;
-
+    overflow-y: auto;
 }
 
 #blinkies {
@@ -188,7 +192,7 @@ li {
     background-color: white;
     justify-content: center;
     align-items: flex-start;
-    width: 60%;
+    width: 70%;
     margin: 0 auto;
     padding: 10px;
     margin-top: 15px;
