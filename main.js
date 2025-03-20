@@ -14,3 +14,5 @@ async function updateSongs() {
 }
 
 updateSongs();
+
+console.log("umm hello?")
