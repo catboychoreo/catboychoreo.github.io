@@ -182,6 +182,11 @@ body {
     margin-top: 7px;
 }
 
+#blinkies img {
+    width: 150px;
+    height: 20px;
+}
+
 .footer {
     display: flex;
     flex-direction: column;
