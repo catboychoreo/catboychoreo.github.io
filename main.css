@@ -147,7 +147,7 @@ body {
     margin: 0;
     padding: 0;
     flex-wrap: nowrap;
-    gap: 2px;
+    gap: 7px;
 }
 
 #sidebar-right img {
@@ -164,6 +164,7 @@ body {
     margin-top: 3px;
     padding:15px;
     overflow-y: auto;
+    height:150px;
 }
 
 #blinkies {
