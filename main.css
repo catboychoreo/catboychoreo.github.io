@@ -101,15 +101,15 @@ body {
 }
 
 #about-me {
-    display:flex;
+    display: flex;
     flex-direction: column;
     align-self: flex-start;
 }
 
 #to-do {
-    display:flex;
+    display: flex;
     flex-direction: column;
-    align-self:flex-start;
+    align-self: flex-start;
 }
 
 #sidebar {
@@ -156,8 +156,6 @@ body {
 
 #sidebar-right img {
     object-fit: cover;
-    width: 100%;
-    height: 100%;
 }
 
 #my-song {
@@ -166,9 +164,13 @@ body {
 
 #updates {
     margin-top: 3px;
-    padding:15px;
+    padding: 15px;
     overflow-y: auto;
-    height:150px;
+    height: 150px;
+}
+
+#guestbook-txt {
+    font-size: 17px;
 }
 
 #blinkies {
@@ -220,5 +222,5 @@ li {
 }
 
 #list {
-    margin:30px;
+    margin: 30px;
 }
