@@ -112,6 +112,12 @@ body {
     align-self: flex-start;
 }
 
+#under-construction {
+    height: auto;
+    width: 60%;
+    margin-top: 15px;
+}
+
 #sidebar {
     width: 88px;
     gap: 2px;

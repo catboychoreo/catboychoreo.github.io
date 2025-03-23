@@ -3,6 +3,25 @@
 <head>
     <title>jamie's resources :3</title>
     <link href="main.css" rel="stylesheet">
+
+    <script type="text/javascript">
+        message = "jamie's resources :3 ";
+        function step() {
+            message = message.substr(1) + message.substr(0, 1);
+            document.title = message.substr(0, 15);
+        }
+    </script>
+
+    <link rel="icon" id="favicon" href="images/monster icon 1.png">
+    <script>
+    const favicon = document.getElementById('favicon');
+    let frameIndex = 0;
+    const frames = ['images/monster icon 1.png', 'images/monster icon 2.png'];
+    setInterval(() => {
+        frameIndex = (frameIndex + 1) % frames.length;
+        favicon.href = frames[frameIndex];
+    }, 100);
+    </script>
 </head>
 
 <body>
@@ -21,6 +40,23 @@
             <li>
                 <a href="https://scripted.neocities.org/">scripted's resources</a>
                 <p>- has a lot of cool scripts displayed! check it out its rlly good</p>
+            </li>
+            <li>
+                <span><b>animated favicon</b></span>
+                <p>- i made this code for an animated favicon (icon @ top of the page)! most browsers do not support gifs
+                    as favicons so thisll have 2 do... put this inbetween your head tags in html!</p>
+                <textarea style="width: 650px; height: 171px;">
+&lt;link rel=&quot;icon&quot; id=&quot;favicon&quot; href=&quot;YOUR_FIRST_FRAME_PNG_HERE.png&quot;&gt;
+&lt;script&gt;
+const favicon = document.getElementById('favicon');
+let frameIndex = 0;
+const frames = ['YOUR_FIRST_FRAME_PNG_HERE.png', 'YOUR_SECOND_FRAME_PNG_HERE.png']; // continue adding pngs for extra frames!
+setInterval(() =&gt; {
+frameIndex = (frameIndex + 1) % frames.length;
+favicon.href = frames[frameIndex];
+}, 100); // change this value for a faster animation
+&lt;/script&gt;
+                </textarea>
             </li>
             <h2>graphics</h2>
             <li>
@@ -80,7 +116,12 @@
             </li>
             <li>
                 <a href="https://www.free-website-hit-counter.com/">freewebsitehitcounter</a>
-                <p>- adds a hit counter 2 ur website! alot of hit counters need u to host ur site on neocities but this one supports any website</p>
+                <p>- adds a hit counter 2 ur website! alot of hit counters need u to host ur site on neocities but this
+                    one supports any website</p>
+            </li>
+            <li>
+                <span>clip studio paint</span>
+                <p>- all of my art (buttons, favicons, etc.) is done w/ csp! but im not linking it cuz i pirated it... FIND IT YOURSELF!!! it awesome Tho</p>
             </li>
 
             <p>besides this, this website is made by ME!!!!!!!!! muahahaha!!!</p>

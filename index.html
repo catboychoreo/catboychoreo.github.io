@@ -11,6 +11,17 @@
         }
     </script>
 
+    <link rel="icon" id="favicon" href="images/monster icon 1.png">
+    <script>
+    const favicon = document.getElementById('favicon');
+    let frameIndex = 0;
+    const frames = ['images/monster icon 1.png', 'images/monster icon 2.png'];
+    setInterval(() => {
+        frameIndex = (frameIndex + 1) % frames.length;
+        favicon.href = frames[frameIndex];
+    }, 100);
+    </script>
+
     <link href="main.css" rel="stylesheet">
 </head>
 
@@ -88,6 +99,7 @@
                     <li>maybe migrate to neocities instead of github pages lol </li>
                     <li>chatbox? commentbox?</li>
                 </div>
+                <img id="under-construction" src="images/under construction.png">
             </div>
 
             <div id="sidebar-right">
