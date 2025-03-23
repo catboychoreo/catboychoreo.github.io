@@ -113,13 +113,7 @@ body {
 }
 
 #sidebar {
-    display: flex;
     width: 88px;
-    flex-direction: column;
-    align-self: flex-start;
-    margin: 0;
-    padding: 0;
-    flex-wrap: wrap;
     gap: 2px;
 }
 
@@ -127,6 +121,11 @@ body {
     object-fit: contain;
     margin: 0;
     padding: 0;
+}
+
+#my-button {
+    padding: 5px;
+    margin-top: 5px;
 }
 
 #button-link {
